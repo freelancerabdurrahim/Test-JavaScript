@@ -10,22 +10,24 @@
 <body class="p-2">
     
     
-  <h1 id="MyId">H1</h1>
-  <h3 class="MyClass">H3</h3>
-  <h6 name="MyName">h6</h6>
-  <p>p</p>
+  
 
-  <button onclick="findElements()">Click</button>
+  <button onclick="ExGetRequest()">ExGetRequest</button>
 
 
 
     <script>
        
-      function findElements(){
-        document.querySelector('#MyId').innerHTML="H1 Manupulated"
-        document.querySelector('.MyClass').innerHTML="h3 Manupulated"
-        document.querySelector('h6[ name="MyName"]').innerHTML="H6 Manupulated"
-        document.querySelector('p').innerHTML="P Manupulated"
+      function ExGetRequest(){
+        var URL = "https://crud.teamrabbil.com/api/v1/RedProduct";
+        var Configuration = {method:"GET"};
+
+        fetch(URL, Configuration)
+        .then(response=>response.json())
+        .then(result=>console.log(result))
+        .catch(err=>console.log(err));
+
+
       }
 
     </script>

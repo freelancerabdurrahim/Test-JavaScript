@@ -1,8 +1,5 @@
-var myArry= ["A", "B", "C", "D", "E", "F"];
+var Countiry = ["Bangladesh", "Inida", "China", "Pakistan"]
 
-var myArryPro = new Array ("A", "B", "C", "D", "E", "F")
+var[, , , a] = Countiry;
 
-for(let item of myArryPro){
-    console.log(item);
-}
-
+console.log(a);

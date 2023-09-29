@@ -1,5 +1,8 @@
-let MyCountry = ["Dhaka", "Rangpur", "Bagura", "Thakurgaon", "Dinajpur", "Pabna"];
+var myArry= ["A", "B", "C", "D", "E", "F"];
 
-for(let MyCity of MyCountry){
-    console.log(MyCity);
+// var myArryPro = new Array ["A", "B", "C", "D", "E", "F"];
+
+for(let item of myArry){
+    console.log(item);
 }
+

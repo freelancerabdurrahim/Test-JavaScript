@@ -1,5 +1,16 @@
-var Countiry = ["Bangladesh", "Inida", "China", "Pakistan"]
+var mySet = new Set();
+mySet.add("Bangladesh");
+mySet.add("India");
+mySet.add("Nepal");
+mySet.add("Chaina");
+mySet.add("Bhutan");
+mySet.add("Maldiv");
 
-var[, , , a] = Countiry;
+// mySet.delete("Maldiv");
+// console.log(mySet.values());
 
-console.log(a);
+if(mySet.has("Canda")){
+    console.log("Yes")
+}else{
+    console.log("No")
+}

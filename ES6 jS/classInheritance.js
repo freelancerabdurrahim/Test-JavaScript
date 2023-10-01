@@ -9,11 +9,8 @@ class parent{
 }
 
 class child extends parent{
-    demo(){
-        super.fun1();
-        super.fun2();
-    }
+    
 }
 
 var obj = new child();
-obj.demo();
+obj.fun2();
